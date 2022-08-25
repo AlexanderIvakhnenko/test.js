@@ -72,22 +72,45 @@
 
 
 
-const a = ["Mango"];
-// Так как a это массив, в b записывается ссылка на уже существующий
-// массив в памяти. Теперь a и b указывают на один и тот же массив.
-const b = a;
-console.log(a); // ["Mango"]
-console.log(b); // ["Mango"]
+// const a = ["Mango"];
+// // Так как a это массив, в b записывается ссылка на уже существующий
+// // массив в памяти. Теперь a и b указывают на один и тот же массив.
+// const b = a;
+// console.log(a); // ["Mango"]
+// console.log(b); // ["Mango"]
 
-// Изменим массив, добавив еще один элемент, используя указатель из a
-a.push("Poly");
-console.log(a); // ["Mango", "Poly"]
+// // Изменим массив, добавив еще один элемент, используя указатель из a
+// a.push("Poly");
+// console.log(a); // ["Mango", "Poly"]
 
-// b также изменилось, потому что b, как и a,
-// просто содержит ссылку на одно и то же место в памяти
-console.log(b); // ["Mango", "Poly"]
+// // b также изменилось, потому что b, как и a,
+// // просто содержит ссылку на одно и то же место в памяти
+// console.log(b); // ["Mango", "Poly"]
 
-// Результат повторяется
-b.push("Ajax");
-console.log(a); // ["Mango", "Poly", "Ajax"]
-console.log(b); // ["Mango", "Poly", "Ajax"]
+// // Результат повторяется
+// b.push("Ajax");
+// console.log(a); // ["Mango", "Poly", "Ajax"]
+// console.log(b); // ["Mango", "Poly", "Ajax"]
+
+
+// function getSubscriptionPrice(type) {
+//   let price;
+//   // Change code below this line
+
+//  switch (type) { // Change this line
+//     case  "starter": // Change this line
+//       price = 0; // Change this line
+//       break;
+
+//     case  "professional": // Change this line
+//       price = 20; // Change this line
+//       break;
+
+//     case  "organization": // Change this line
+//       price = 50; // Change this line
+//       break;
+//   }
+
+//   // Change code above this line
+//   return price;
+// }
